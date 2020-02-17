@@ -1,0 +1,39 @@
+{
+  "name": "@pollon/pollon",
+  "version": "1.0.0",
+  "description": "Pollon is an open source web application platform",
+  "main": "dist/pollon-pollon.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pollon-js/pollon.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "dev:build": "rollup -c ./build/index.js",
+    "prepublish": "npm run dev:build"
+  },
+  "keywords": [
+    "pollon",
+    "framework",
+    "frontend"
+  ],
+  "author": "Francesco Lasaracina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pollon-js/pollon/issues"
+  },
+  "homepage": "https://github.com/pollon-js/pollon#readme",
+  "dependencies": {
+    "@pollon/light-dom": "^1.0.0",
+    "@pollon/message-broker": "^1.0.0",
+    "@pollon/state-machine": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rollup": "^1.31.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.2.0"
+  }
+}
